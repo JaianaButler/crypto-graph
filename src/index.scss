@@ -1,0 +1,268 @@
+$primary-color: rgba(67, 130, 181, 255);
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  height: 7vh;
+  background-color: white;
+  padding: 1vh 7vw; //padding: 2vh 8.5vw; //padding: 15px 100px;
+  border-bottom: 2px solid $primary-color;
+
+  .navbar {
+    width: auto;
+    height: 100%;
+
+    .logo {
+      height: 7vh;
+      width: 4vw;
+      float: left;
+      display: none;
+    }
+
+    .hamburger-container {
+      float: left;
+      margin: 4px 0 0 0;
+      :hover {
+        cursor: pointer;
+      }
+      .hamburger {
+        border: none;
+        background: none;
+        div {
+          width: 35px;
+          height: 5px;
+          background-color: $primary-color;
+          margin: 6px 0;
+          border-radius: 6px;
+        }
+      }
+    }
+
+    .nav-menu-container {
+      float: left;
+      padding: 2.5vh 8.5vw; //padding: 16px 100px;
+      display: none;
+
+      .nav-menu {
+        width: auto;
+        height: 100%;
+
+        a {
+          text-decoration: none;
+          color: rgb(49, 49, 49);
+          :hover {
+            color: $primary-color;
+          }
+
+          .nav-item {
+            float: left;
+            margin: 0 1.4vw;
+            //font-size: 0.9em;
+            background: none;
+          }
+        }
+        a.active {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .nav-buttons {
+      float: right;
+
+      .button-container {
+        padding-top: 1.1vh; //padding-top: 8px;
+
+        .sign-up {
+          background: none;
+          border: none;
+          margin-right: 20px;
+          font-weight: bold;
+          color: $primary-color;
+          cursor: pointer;
+        }
+        .log-in {
+          border-radius: 20px;
+          border: none;
+          background: $primary-color;
+          color: white;
+          padding: 10px 30px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  header {
+    border-bottom: 2px solid gray;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+  header {
+    border-bottom: 2px solid green;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  header {
+    border-bottom: 2px solid yellow;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  header {
+    .navbar {
+      .logo {
+        display: inline;
+        cursor: pointer;
+      }
+      .nav-menu-container {
+        display: inline;
+      }
+      .hamburger-container {
+        display: none;
+      }
+    }
+  }
+
+  header {
+    border-bottom: 2px solid red;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  header {
+    border-bottom: 2px solid blue;
+  }
+}

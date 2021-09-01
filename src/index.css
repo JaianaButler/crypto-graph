@@ -1,13 +1,277 @@
-body {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  height: 7vh;
+  background-color: white;
+  padding: 1vh 7vw;
+  border-bottom: 2px solid #4382b5;
+}
+
+header .navbar {
+  width: auto;
+  height: 100%;
+}
+
+header .navbar .logo {
+  height: 7vh;
+  width: 4vw;
+  float: left;
+  display: none;
+}
+
+header .navbar .hamburger-container {
+  float: left;
+  margin: 4px 0 0 0;
+}
+
+header .navbar .hamburger-container :hover {
+  cursor: pointer;
+}
+
+header .navbar .hamburger-container .hamburger {
+  border: none;
+  background: none;
+}
+
+header .navbar .hamburger-container .hamburger div {
+  width: 35px;
+  height: 5px;
+  background-color: #4382b5;
+  margin: 6px 0;
+  border-radius: 6px;
+}
+
+header .navbar .nav-menu-container {
+  float: left;
+  padding: 2.5vh 8.5vw;
+  display: none;
+}
+
+header .navbar .nav-menu-container .nav-menu {
+  width: auto;
+  height: 100%;
+}
+
+header .navbar .nav-menu-container .nav-menu a {
+  text-decoration: none;
+  color: #313131;
+}
+
+header .navbar .nav-menu-container .nav-menu a :hover {
+  color: #4382b5;
+}
+
+header .navbar .nav-menu-container .nav-menu a .nav-item {
+  float: left;
+  margin: 0 1.4vw;
+  background: none;
+}
+
+header .navbar .nav-menu-container .nav-menu a.active {
+  color: #4382b5;
+}
+
+header .navbar .nav-buttons {
+  float: right;
+}
+
+header .navbar .nav-buttons .button-container {
+  padding-top: 1.1vh;
+}
+
+header .navbar .nav-buttons .button-container .sign-up {
+  background: none;
+  border: none;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #4382b5;
+  cursor: pointer;
+}
+
+header .navbar .nav-buttons .button-container .log-in {
+  border-radius: 20px;
+  border: none;
+  background: #4382b5;
+  color: white;
+  padding: 10px 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  header {
+    border-bottom: 2px solid gray;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+  header {
+    border-bottom: 2px solid green;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  header {
+    border-bottom: 2px solid yellow;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  header .navbar .logo {
+    display: inline;
+    cursor: pointer;
+  }
+  header .navbar .nav-menu-container {
+    display: inline;
+  }
+  header .navbar .hamburger-container {
+    display: none;
+  }
+  header {
+    border-bottom: 2px solid red;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  header {
+    border-bottom: 2px solid blue;
+  }
+}
+/*# sourceMappingURL=index.css.map */
