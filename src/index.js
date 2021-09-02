@@ -2,6 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+function HamburgerSideNav() {
+  return(
+    <div className='hamburger-container'>
+      <button className='hamburger'>
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+    </div>
+  );
+}
+
 function NavMenu() {
   return (
     <div className='nav-menu-container'>
@@ -17,7 +29,7 @@ function NavMenu() {
 }
 
 function NavButtons() {
-  return(
+  return (
     <div className='nav-buttons'>
       <div className='button-container'>
         <button className='sign-up'>SIGN UP</button>
@@ -31,23 +43,11 @@ function Header () {
   return (
     <header>
       <nav className='navbar'>
-
         <img className='logo' src='../cryptocoin.svg' />
-
-        <div className='hamburger-container'>
-          <button className='hamburger'>
-            <div></div>
-            <div></div>
-            <div></div>
-          </button>
-        </div>
-        
+        <HamburgerSideNav />
         <NavMenu />
-
         <NavButtons />
-
       </nav>
-      
     </header>
   );
 }
