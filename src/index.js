@@ -2,6 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+function NavButtons() {
+  return(
+    <div className='nav-buttons'>
+      <div className='button-container'>
+        <button className='sign-up'>SIGN UP</button>
+        <button className='log-in'>LOG IN</button>
+      </div>
+    </div>
+  );
+
+}
+
 function Header () {
   return (
     <header>
@@ -27,12 +39,7 @@ function Header () {
           </ul>
         </div>
 
-        <div className='nav-buttons'>
-          <div className='button-container'>
-            <button className='sign-up'>SIGN UP</button>
-            <button className='log-in'>LOG IN</button>
-          </div>
-        </div>
+        <NavButtons/>
 
       </nav>
       
