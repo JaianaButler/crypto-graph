@@ -53,8 +53,13 @@ function Navigation () {
 function Header() {
   return (
     <header>
-      <h1>SHIBA INU</h1>
-      <h4>SHIB</h4>
+      <div class='header-container'>
+        <div className='header-top'>
+          <img className='crypto-logo' src='../shibainu-icon.png' />
+          <h1>SHIBA INU</h1>
+          <h4>SHIB</h4>
+        </div>
+      </div>
     </header>
   );
 }
