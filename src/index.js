@@ -54,11 +54,16 @@ function Header() {
   return (
     <header>
       <div class='header-container'>
-        <div className='header-top'>
+        <div className='header-left'>
           <img className='crypto-logo' src='../shibainu-icon.png' />
           <h1>SHIBA INU</h1>
           <h4>SHIB</h4>
         </div>
+
+        <div className='header-middle'>
+          <h2>$0.000007222</h2>
+        </div>
+        <div className='header-right'></div>
       </div>
     </header>
   );
