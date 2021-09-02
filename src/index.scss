@@ -125,7 +125,7 @@ table {
   border-spacing: 0;
 }
 
-header {
+.nav-container {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   height: 7vh;
@@ -223,25 +223,25 @@ header {
 /* Media Queries */
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
-  header {
+  .nav-container {
     border-bottom: 2px solid gray;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
-  header {
+  .nav-container {
     border-bottom: 2px solid green;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  header {
+  .nav-container {
     border-bottom: 2px solid yellow;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-  header {
+  .nav-container {
     .navbar {
       .logo {
         display: inline;
@@ -256,13 +256,13 @@ header {
     }
   }
 
-  header {
+  .nav-container {
     border-bottom: 2px solid red;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-  header {
+  .nav-container {
     border-bottom: 2px solid blue;
   }
 }

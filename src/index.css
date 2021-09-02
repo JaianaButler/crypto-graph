@@ -129,7 +129,7 @@ table {
   border-spacing: 0;
 }
 
-header {
+.nav-container {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   height: 7vh;
@@ -138,33 +138,33 @@ header {
   border-bottom: 2px solid #4382b5;
 }
 
-header .navbar {
+.nav-container .navbar {
   width: auto;
   height: 100%;
 }
 
-header .navbar .logo {
+.nav-container .navbar .logo {
   height: 7vh;
   width: 4vw;
   float: left;
   display: none;
 }
 
-header .navbar .hamburger-container {
+.nav-container .navbar .hamburger-container {
   float: left;
   margin: 4px 0 0 0;
 }
 
-header .navbar .hamburger-container :hover {
+.nav-container .navbar .hamburger-container :hover {
   cursor: pointer;
 }
 
-header .navbar .hamburger-container .hamburger {
+.nav-container .navbar .hamburger-container .hamburger {
   border: none;
   background: none;
 }
 
-header .navbar .hamburger-container .hamburger div {
+.nav-container .navbar .hamburger-container .hamburger div {
   width: 35px;
   height: 5px;
   background-color: #4382b5;
@@ -172,45 +172,45 @@ header .navbar .hamburger-container .hamburger div {
   border-radius: 6px;
 }
 
-header .navbar .nav-menu-container {
+.nav-container .navbar .nav-menu-container {
   float: left;
   padding: 2.5vh 8.5vw;
   display: none;
 }
 
-header .navbar .nav-menu-container .nav-menu {
+.nav-container .navbar .nav-menu-container .nav-menu {
   width: auto;
   height: 100%;
 }
 
-header .navbar .nav-menu-container .nav-menu a {
+.nav-container .navbar .nav-menu-container .nav-menu a {
   text-decoration: none;
   color: #313131;
 }
 
-header .navbar .nav-menu-container .nav-menu a :hover {
+.nav-container .navbar .nav-menu-container .nav-menu a :hover {
   color: #4382b5;
 }
 
-header .navbar .nav-menu-container .nav-menu a .nav-item {
+.nav-container .navbar .nav-menu-container .nav-menu a .nav-item {
   float: left;
   margin: 0 1.4vw;
   background: none;
 }
 
-header .navbar .nav-menu-container .nav-menu a.active {
+.nav-container .navbar .nav-menu-container .nav-menu a.active {
   color: #4382b5;
 }
 
-header .navbar .nav-buttons {
+.nav-container .navbar .nav-buttons {
   float: right;
 }
 
-header .navbar .nav-buttons .button-container {
+.nav-container .navbar .nav-buttons .button-container {
   padding-top: 1.1vh;
 }
 
-header .navbar .nav-buttons .button-container .sign-up {
+.nav-container .navbar .nav-buttons .button-container .sign-up {
   background: none;
   border: none;
   margin-right: 20px;
@@ -219,7 +219,7 @@ header .navbar .nav-buttons .button-container .sign-up {
   cursor: pointer;
 }
 
-header .navbar .nav-buttons .button-container .log-in {
+.nav-container .navbar .nav-buttons .button-container .log-in {
   border-radius: 20px;
   border: none;
   background: #4382b5;
@@ -232,45 +232,45 @@ header .navbar .nav-buttons .button-container .log-in {
 /* Media Queries */
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
-  header {
+  .nav-container {
     border-bottom: 2px solid gray;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
-  header {
+  .nav-container {
     border-bottom: 2px solid green;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  header {
+  .nav-container {
     border-bottom: 2px solid yellow;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-  header .navbar .logo {
+  .nav-container .navbar .logo {
     display: inline;
     cursor: pointer;
   }
-  header .navbar .nav-menu-container {
+  .nav-container .navbar .nav-menu-container {
     display: inline;
   }
-  header .navbar .hamburger-container {
+  .nav-container .navbar .hamburger-container {
     display: none;
   }
-  header {
+  .nav-container {
     border-bottom: 2px solid red;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-  header {
+  .nav-container {
     border-bottom: 2px solid blue;
   }
 }

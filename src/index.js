@@ -39,16 +39,16 @@ function NavButtons() {
   );
 }
 
-function Header () {
+function Navigation () {
   return (
-    <header>
+    <div className='nav-container'>
       <nav className='navbar'>
         <img className='logo' src='../cryptocoin.svg' />
         <HamburgerSideNav />
         <NavMenu />
         <NavButtons />
       </nav>
-    </header>
+    </div>
   );
 }
 function Content() {
@@ -60,7 +60,7 @@ function Footer () {
 function App () {
   return (
     <React.Fragment>
-      <Header />
+      <Navigation />
     </React.Fragment>
   );
 }
