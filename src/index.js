@@ -2,6 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+function NavMenu() {
+  return (
+    <div className='nav-menu-container'>
+      <ul className='nav-menu'>
+        <a href='#'><li className='nav-item'>HOME</li></a>
+        <a href='#'><li className='nav-item'>MARKET</li></a>
+        <a href='#' className='active'><li className='nav-item'>TRADE</li></a>
+        <a href='#'><li className='nav-item'>PRICING</li></a>
+        <a href='#'><li className='nav-item'>HELP</li></a>
+      </ul>
+    </div>
+  );
+}
+
 function NavButtons() {
   return(
     <div className='nav-buttons'>
@@ -11,7 +25,6 @@ function NavButtons() {
       </div>
     </div>
   );
-
 }
 
 function Header () {
@@ -23,23 +36,15 @@ function Header () {
 
         <div className='hamburger-container'>
           <button className='hamburger'>
-          <div></div>
-          <div></div>
-          <div></div>
-        </button>
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
         </div>
         
-        <div className='nav-menu-container'>
-          <ul className='nav-menu'>
-            <a href='#'><li className='nav-item'>HOME</li></a>
-            <a href='#'><li className='nav-item'>MARKET</li></a>
-            <a href='#' className='active'><li className='nav-item'>TRADE</li></a>
-            <a href='#'><li className='nav-item'>PRICING</li></a>
-            <a href='#'><li className='nav-item'>HELP</li></a>
-          </ul>
-        </div>
+        <NavMenu />
 
-        <NavButtons/>
+        <NavButtons />
 
       </nav>
       
