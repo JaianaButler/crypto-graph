@@ -13,7 +13,6 @@ function HamburgerSideNav() {
     </div>
   );
 }
-
 function NavMenu() {
   return (
     <div className='nav-menu-container'>
@@ -27,7 +26,6 @@ function NavMenu() {
     </div>
   );
 }
-
 function NavButtons() {
   return (
     <div className='nav-buttons'>
@@ -38,7 +36,6 @@ function NavButtons() {
     </div>
   );
 }
-
 function Navigation () {
   return (
     <div className='nav-container'>
@@ -51,7 +48,20 @@ function Navigation () {
     </div>
   );
 }
+
+function Header() {
+  return (
+    <header>
+      <h1>SHIBA INU</h1>
+      <h4>SHIB</h4>
+    </header>
+  );
+}
+
 function Content() {
+  return (
+    <Header />
+  );
 
 }
 function Footer () {
@@ -61,6 +71,7 @@ function App () {
   return (
     <React.Fragment>
       <Navigation />
+      <Content />
     </React.Fragment>
   );
 }
