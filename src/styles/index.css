@@ -135,14 +135,14 @@ header .header-container .header-left .crypto-logo {
 }
 
 header .header-container .header-left h1 {
-  font-size: 20px;
-  margin: 16px 10px 0 18px;
+  font-size: 1.3em;
+  margin: 2.2vh 2vw 0 3.5vw;
   color: #2c2c2c;
 }
 
 header .header-container .header-left h4 {
-  font-size: 12px;
-  margin: 20px 0px;
+  font-size: 0.8em;
+  margin: 3vh 0;
   color: gray;
 }
 
@@ -154,17 +154,17 @@ header .header-container .header-left h4 {
 
 header .header-container .header-middle {
   float: left;
-  margin: 0 0 0 90px;
+  margin: 0 0 0 17vw;
 }
 
 header .header-container .header-middle h1 {
   font-size: 20px;
   color: #2c2c2c;
-  margin: 16px 0 8px 0;
+  margin: 2.2vh 0 1.1vh 0;
 }
 
 header .header-container .header-middle p {
-  padding: 0 0 0 88px;
+  float: right;
   color: #7bc57b;
 }
 
@@ -212,6 +212,37 @@ header .header-container .header-right {
   header .header-container {
     margin: 6vh 0;
     padding: 0 8vw;
+  }
+  header .header-container .header-left .crypto-logo {
+    position: relative;
+    bottom: 8px;
+    height: 70px;
+    width: 70px;
+    float: left;
+  }
+  header .header-container .header-left h1 {
+    font-size: 1.5em;
+    margin: 2.2vh 1.8vw 0 2.8vw;
+    color: #2c2c2c;
+  }
+  header .header-container .header-left h4 {
+    font-size: 0.9em;
+    margin: 2.9vh 0;
+    color: gray;
+  }
+  header .header-container .header-middle {
+    float: left;
+    margin: 0 0 0 17vw;
+  }
+  header .header-container .header-middle h1 {
+    font-size: 1.5em;
+    color: #2c2c2c;
+    margin: 2.2vh 0 1.1vh 0;
+  }
+  header .header-container .header-middle p {
+    font-weight: 300;
+    float: right;
+    color: #7bc57b;
   }
 }
 
