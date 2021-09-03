@@ -36,13 +36,16 @@ body {
 
     .hamburger-container {
       float: left;
-      margin: 4px 0 0 0;
+      margin: 10px 0 0 0;
+
       :hover {
         cursor: pointer;
       }
+
       .hamburger {
         border: none;
         background: none;
+
         div {
           width: 35px;
           height: 5px;
@@ -77,6 +80,7 @@ body {
             background: none;
           }
         }
+
         a.active {
           color: $primary-color;
         }
@@ -88,11 +92,13 @@ body {
 
       .button-container {
         padding-top: 1.5vh; //padding-top: 8px;
+
         .sign-up,
         .log-in {
           font-family: "Noto Sans JP", sans-serif;
           font-weight: 500;
         }
+
         .sign-up {
           background: none;
           border: none;
@@ -100,6 +106,7 @@ body {
           color: $primary-color;
           cursor: pointer;
         }
+
         .log-in {
           border-radius: 20px;
           border: none;
@@ -112,34 +119,62 @@ body {
     }
   }
 }
+
 header {
   .header-container {
-    margin: 50px 0;
-    padding: 0 110px;
+    margin: 4vh 0; //margin: 50px 0;
+    padding: 0 7vw; //padding: 0 110px;
     width: 100%;
     height: 12vh;
-    border: 1px solid black;
-    .header-top {
+    border-bottom: 1px solid $offset-color;
+
+    .header-left {
       width: 100%;
-      border: 1px solid blue;
+      //border: 1px solid blue;
+
       .crypto-logo {
-        height: 70px;
-        width: 70px;
+        height: 50px; //height: 70px;
+        width: 50px; //width: 70px;
         float: left;
       }
+
       h1 {
-        margin: 16px 26px;
+        font-size: 20px;
+        margin: 16px 10px 0 18px;
         color: $secondary-color;
       }
+
       h4 {
-        margin: 26px 0px;
+        font-size: 12px;
+        margin: 20px 0px;
         color: gray;
       }
+
       .crypto-logo,
       h1,
       h4 {
         float: left;
       }
+    }
+
+    .header-middle {
+      float: left;
+      margin: 0 0 0 90px; //margin: 0 46px;
+
+      h1 {
+        font-size: 20px;
+        color: $secondary-color;
+        margin: 16px 0 8px 0;
+      }
+
+      p {
+        padding: 0 0 0 88px;
+        color: rgb(123, 197, 123);
+      }
+    }
+
+    .header-right {
+      float: right;
     }
   }
 }
@@ -182,6 +217,13 @@ header {
 
   .nav-container {
     border-bottom: 1px solid red;
+  }
+
+  header {
+    .header-container {
+      margin: 6vh 0; //margin: 50px 0;
+      padding: 0 8vw;
+    }
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */

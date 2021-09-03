@@ -34,7 +34,7 @@ body {
 
 .nav-container .navbar .hamburger-container {
   float: left;
-  margin: 4px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .nav-container .navbar .hamburger-container :hover {
@@ -117,38 +117,59 @@ body {
 }
 
 header .header-container {
-  margin: 50px 0;
-  padding: 0 110px;
+  margin: 4vh 0;
+  padding: 0 7vw;
   width: 100%;
   height: 12vh;
-  border: 1px solid black;
+  border-bottom: 1px solid #cfcfcf;
 }
 
-header .header-container .header-top {
+header .header-container .header-left {
   width: 100%;
-  border: 1px solid blue;
 }
 
-header .header-container .header-top .crypto-logo {
-  height: 70px;
-  width: 70px;
+header .header-container .header-left .crypto-logo {
+  height: 50px;
+  width: 50px;
   float: left;
 }
 
-header .header-container .header-top h1 {
-  margin: 16px 26px;
+header .header-container .header-left h1 {
+  font-size: 20px;
+  margin: 16px 10px 0 18px;
   color: #2c2c2c;
 }
 
-header .header-container .header-top h4 {
-  margin: 26px 0px;
+header .header-container .header-left h4 {
+  font-size: 12px;
+  margin: 20px 0px;
   color: gray;
 }
 
-header .header-container .header-top .crypto-logo,
-header .header-container .header-top h1,
-header .header-container .header-top h4 {
+header .header-container .header-left .crypto-logo,
+header .header-container .header-left h1,
+header .header-container .header-left h4 {
   float: left;
+}
+
+header .header-container .header-middle {
+  float: left;
+  margin: 0 0 0 90px;
+}
+
+header .header-container .header-middle h1 {
+  font-size: 20px;
+  color: #2c2c2c;
+  margin: 16px 0 8px 0;
+}
+
+header .header-container .header-middle p {
+  padding: 0 0 0 88px;
+  color: #7bc57b;
+}
+
+header .header-container .header-right {
+  float: right;
 }
 
 /* Media Queries */
@@ -187,6 +208,10 @@ header .header-container .header-top h4 {
   }
   .nav-container {
     border-bottom: 1px solid red;
+  }
+  header .header-container {
+    margin: 6vh 0;
+    padding: 0 8vw;
   }
 }
 

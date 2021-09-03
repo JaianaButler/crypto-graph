@@ -61,7 +61,8 @@ function Header() {
         </div>
 
         <div className='header-middle'>
-          <h2>$0.000007222</h2>
+          <h1>$0.000007222</h1>
+          <p>+6.8%</p>
         </div>
         <div className='header-right'></div>
       </div>
