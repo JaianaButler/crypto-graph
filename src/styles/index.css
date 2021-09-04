@@ -12,6 +12,11 @@ body {
   margin: 0 0 0 0;
 }
 
+#watchlist-icon {
+  color: #d3ba4b;
+  margin: 0 4px 0 0;
+}
+
 .nav-container {
   font-weight: bold;
   height: 11.5vh;
@@ -89,17 +94,17 @@ body {
   float: right;
 }
 
-.nav-container .navbar .nav-buttons .button-container {
+.nav-container .navbar .nav-buttons .nav-button-container {
   padding-top: 1.5vh;
 }
 
-.nav-container .navbar .nav-buttons .button-container .sign-up,
-.nav-container .navbar .nav-buttons .button-container .log-in {
+.nav-container .navbar .nav-buttons .nav-button-container .sign-up,
+.nav-container .navbar .nav-buttons .nav-button-container .log-in {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
 }
 
-.nav-container .navbar .nav-buttons .button-container .sign-up {
+.nav-container .navbar .nav-buttons .nav-button-container .sign-up {
   background: none;
   border: none;
   margin-right: 20px;
@@ -107,7 +112,7 @@ body {
   cursor: pointer;
 }
 
-.nav-container .navbar .nav-buttons .button-container .log-in {
+.nav-container .navbar .nav-buttons .nav-button-container .log-in {
   border-radius: 20px;
   border: none;
   background: #4382b5;
@@ -170,6 +175,12 @@ header .header-container .header-middle p {
 
 header .header-container .header-right {
   float: right;
+}
+
+header .header-container .header-right .header-button-container .buy-button {
+  padding: 12px 20px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
 }
 
 /* Media Queries */

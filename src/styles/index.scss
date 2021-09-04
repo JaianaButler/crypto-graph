@@ -15,6 +15,11 @@ body {
   margin: 0 0 0 0;
 }
 
+#watchlist-icon {
+  color: rgb(211, 186, 75);
+  margin: 0 4px 0 0;
+}
+
 .nav-container {
   font-weight: bold;
   height: 11.5vh;
@@ -90,7 +95,7 @@ body {
     .nav-buttons {
       float: right;
 
-      .button-container {
+      .nav-button-container {
         padding-top: 1.5vh; //padding-top: 8px;
 
         .sign-up,
@@ -176,6 +181,14 @@ header {
 
     .header-right {
       float: right;
+
+      .header-button-container {
+        .buy-button {
+          padding: 12px 20px;
+          border: 1px solid $offset-color;
+          border-radius: 4px;
+        }
+      }
     }
   }
 }
@@ -207,9 +220,11 @@ header {
         display: inline;
         cursor: pointer;
       }
+
       .nav-menu-container {
         display: inline;
       }
+
       .hamburger-container {
         display: none;
       }
