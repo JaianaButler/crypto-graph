@@ -10,14 +10,9 @@ $offset-color: rgb(207, 207, 207);
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  background: rgb(230, 230, 230);
+  background: rgb(224, 225, 228);
   font-family: "Noto Sans JP", sans-serif;
   margin: 0 0 0 0;
-}
-
-#watchlist-icon {
-  color: rgb(211, 186, 75);
-  margin: 0 4px 0 0;
 }
 
 .nav-container {
@@ -138,19 +133,19 @@ header {
       //border: 1px solid blue;
 
       .crypto-logo {
-        height: 50px; //height: 70px;
-        width: 50px; //width: 70px;
+        height: 40px; //height: 50px; //height: 70px;
+        width: 40px; //width: 50px; //width: 70px;
         float: left;
       }
 
       h1 {
-        font-size: 1.3em; //font-size: 20px;
+        font-size: 1em; //font-size: 1.3em; //font-size: 20px;
         margin: 2.2vh 2vw 0 3.5vw; //margin: 16px 10px 0 18px;
         color: $secondary-color;
       }
 
       h4 {
-        font-size: 0.8em; //font-size: 12px;
+        font-size: 0.5em; //font-size: 0.8em; //font-size: 12px;
         margin: 3vh 0; //margin: 20px 0px;
         color: gray;
       }
@@ -164,15 +159,16 @@ header {
 
     .header-middle {
       float: left;
-      margin: 0 0 0 17vw; //margin: 0 0 0 90px; //margin: 0 46px;
+      margin: 0 0 0 12vw; //margin: 0 0 0 17vw; //margin: 0 0 0 90px; //margin: 0 46px;
 
       h1 {
-        font-size: 20px;
+        font-size: 1em; //font-size: 20px;
         color: $secondary-color;
         margin: 2.2vh 0 1.1vh 0; //margin: 16px 0 8px 0;
       }
 
       p {
+        font-size: 0.8em;
         float: right;
         //padding: 0 0 0 17vw; //padding: 0 0 0 88px;
         color: rgb(123, 197, 123);
@@ -184,9 +180,21 @@ header {
 
       .header-button-container {
         .buy-button {
-          padding: 12px 20px;
+          font-family: "Noto Sans JP", sans-serif;
+          font-weight: 500;
+          margin: 1vh 0 0 0;
+          padding: 8px; //padding: 12px 20px;
           border: 1px solid $offset-color;
           border-radius: 4px;
+
+          #watchlist-icon {
+            color: rgb(211, 186, 75);
+            //margin: 0 4px 0 0;
+          }
+
+          span {
+            display: none;
+          }
         }
       }
     }
@@ -204,6 +212,28 @@ header {
 @media screen and (min-width: 600px) {
   .nav-container {
     border-bottom: 1px solid green;
+  }
+  header {
+    .header-container {
+      .header-right {
+        .header-button-container {
+          .buy-button {
+            padding: 8px 16px; //padding: 12px 20px;
+            border: 1px solid $offset-color;
+            border-radius: 4px;
+            #watchlist-icon {
+              font-size: 1em;
+              margin: 0 4px 0 0;
+            }
+            span {
+              font-size: 1em;
+              color: $secondary-color;
+              display: inline;
+            }
+          }
+        }
+      }
+    }
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -268,15 +298,29 @@ header {
 
         h1 {
           font-size: 1.5em;
-          color: $secondary-color;
-          margin: 2.2vh 0 1.1vh 0; //margin: 16px 0 8px 0;
         }
 
         p {
-          font-weight: 300;
-          float: right;
-          //padding: 0 0 0 17vw; //padding: 0 0 0 88px;
-          color: rgb(123, 197, 123);
+          font-size: 1em;
+        }
+      }
+
+      .header-right {
+        .header-button-container {
+          .buy-button {
+            padding: 8px 16px; //padding: 12px 20px;
+            border: 1px solid $offset-color;
+            border-radius: 4px;
+            #watchlist-icon {
+              font-size: 1.2em;
+              margin: 0 4px 0 0;
+            }
+            span {
+              font-size: 1.2em;
+              color: $secondary-color;
+              display: inline;
+            }
+          }
         }
       }
     }

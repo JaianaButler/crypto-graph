@@ -70,7 +70,7 @@ function Header() {
         </div>
         <div className='header-right'>
           <div className='header-button-container'>
-            <button className='buy-button'>{watchlistIcon} WATCHLIST</button>
+            <button className='buy-button'>{watchlistIcon} <span>Watchlist</span></button>
           </div>
         </div>
       </div>

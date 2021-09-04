@@ -7,14 +7,9 @@
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  background: #e6e6e6;
+  background: #e0e1e4;
   font-family: "Noto Sans JP", sans-serif;
   margin: 0 0 0 0;
-}
-
-#watchlist-icon {
-  color: #d3ba4b;
-  margin: 0 4px 0 0;
 }
 
 .nav-container {
@@ -134,19 +129,19 @@ header .header-container .header-left {
 }
 
 header .header-container .header-left .crypto-logo {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   float: left;
 }
 
 header .header-container .header-left h1 {
-  font-size: 1.3em;
+  font-size: 1em;
   margin: 2.2vh 2vw 0 3.5vw;
   color: #2c2c2c;
 }
 
 header .header-container .header-left h4 {
-  font-size: 0.8em;
+  font-size: 0.5em;
   margin: 3vh 0;
   color: gray;
 }
@@ -159,16 +154,17 @@ header .header-container .header-left h4 {
 
 header .header-container .header-middle {
   float: left;
-  margin: 0 0 0 17vw;
+  margin: 0 0 0 12vw;
 }
 
 header .header-container .header-middle h1 {
-  font-size: 20px;
+  font-size: 1em;
   color: #2c2c2c;
   margin: 2.2vh 0 1.1vh 0;
 }
 
 header .header-container .header-middle p {
+  font-size: 0.8em;
   float: right;
   color: #7bc57b;
 }
@@ -178,9 +174,20 @@ header .header-container .header-right {
 }
 
 header .header-container .header-right .header-button-container .buy-button {
-  padding: 12px 20px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  margin: 1vh 0 0 0;
+  padding: 8px;
   border: 1px solid #cfcfcf;
   border-radius: 4px;
+}
+
+header .header-container .header-right .header-button-container .buy-button #watchlist-icon {
+  color: #d3ba4b;
+}
+
+header .header-container .header-right .header-button-container .buy-button span {
+  display: none;
 }
 
 /* Media Queries */
@@ -195,6 +202,20 @@ header .header-container .header-right .header-button-container .buy-button {
 @media screen and (min-width: 600px) {
   .nav-container {
     border-bottom: 1px solid green;
+  }
+  header .header-container .header-right .header-button-container .buy-button {
+    padding: 8px 16px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+  }
+  header .header-container .header-right .header-button-container .buy-button #watchlist-icon {
+    font-size: 1em;
+    margin: 0 4px 0 0;
+  }
+  header .header-container .header-right .header-button-container .buy-button span {
+    font-size: 1em;
+    color: #2c2c2c;
+    display: inline;
   }
 }
 
@@ -247,13 +268,23 @@ header .header-container .header-right .header-button-container .buy-button {
   }
   header .header-container .header-middle h1 {
     font-size: 1.5em;
-    color: #2c2c2c;
-    margin: 2.2vh 0 1.1vh 0;
   }
   header .header-container .header-middle p {
-    font-weight: 300;
-    float: right;
-    color: #7bc57b;
+    font-size: 1em;
+  }
+  header .header-container .header-right .header-button-container .buy-button {
+    padding: 8px 16px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+  }
+  header .header-container .header-right .header-button-container .buy-button #watchlist-icon {
+    font-size: 1.2em;
+    margin: 0 4px 0 0;
+  }
+  header .header-container .header-right .header-button-container .buy-button span {
+    font-size: 1.2em;
+    color: #2c2c2c;
+    display: inline;
   }
 }
 
