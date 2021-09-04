@@ -224,6 +224,9 @@ header .header-container .header-right .header-button-container .buy-button span
   .nav-container {
     border-bottom: 1px solid yellow;
   }
+  header .header-container .header-middle {
+    margin: 0 0 0 18vw;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

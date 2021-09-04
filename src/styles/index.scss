@@ -241,6 +241,13 @@ header {
   .nav-container {
     border-bottom: 1px solid yellow;
   }
+  header {
+    .header-container {
+      .header-middle {
+        margin: 0 0 0 18vw;
+      }
+    }
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
