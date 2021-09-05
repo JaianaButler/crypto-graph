@@ -137,6 +137,36 @@ const data = [
     "date": "September 5"
   }
 ];
+const Line = ({ data }) => (
+    <ResponsiveLine
+        data={data}
+        margin={{ top: 50, right: 160, bottom: 50, left: 60 }}
+        xScale={{ type: 'linear' }}
+        yScale={{ type: 'linear', stacked: true, min: 0, max: 2500 }}
+        yFormat=" >-.2f"
+        curve="monotoneX"
+        axisTop={null}
+        axisRight={null}
+        axisBottom={null}
+        axisLeft={null}
+        enableGridX={false}
+        enableGridY={false}
+        colors={{ scheme: 'spectral' }}
+        lineWidth={1}
+        enablePoints={false}
+        pointSize={2}
+        pointColor={{ theme: 'background' }}
+        pointBorderWidth={1}
+        pointBorderColor={{ from: 'serieColor' }}
+        pointLabelYOffset={-12}
+        useMesh={true}
+        gridXValues={[ 0, 20, 40, 60, 80, 100, 120 ]}
+        gridYValues={[ 0, 500, 1000, 1500, 2000, 2500 ]}
+        legends={[]}
+    />
+);
+
+
 
 function HamburgerSideNav() {
   return(
