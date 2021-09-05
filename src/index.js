@@ -54,25 +54,39 @@ function Navigation () {
   );
 }
 
+function HeaderLeft() {
+  return (
+    <div className='header-left'>
+      <img className='crypto-logo' src='../shibainu-icon.png' />
+        <h1>SHIBA INU</h1>
+        <h4>SHIB</h4>
+    </div>
+  );
+}
+function HeaderMiddle() {
+  return (
+    <div className='header-middle'>
+      <h1>$0.000007222</h1>
+      <p>+6.8%</p>
+    </div>
+  );
+}
+function HeaderRight() {
+  return (
+    <div className='header-right'>
+      <div className='header-button-container'>
+        <button className='watchlist-button'>{watchlistIcon} <span>Watchlist</span></button>
+      </div>
+    </div>
+  );
+}
 function Header() {
   return (
     <header>
       <div class='header-container'>
-        <div className='header-left'>
-          <img className='crypto-logo' src='../shibainu-icon.png' />
-          <h1>SHIBA INU</h1>
-          <h4>SHIB</h4>
-        </div>
-
-        <div className='header-middle'>
-          <h1>$0.000007222</h1>
-          <p>+6.8%</p>
-        </div>
-        <div className='header-right'>
-          <div className='header-button-container'>
-            <button className='buy-button'>{watchlistIcon} <span>Watchlist</span></button>
-          </div>
-        </div>
+        <HeaderLeft />
+        <HeaderMiddle />
+        <HeaderRight />
       </div>
     </header>
   );
@@ -84,6 +98,7 @@ function Content() {
   );
 
 }
+
 function Footer () {
 
 }
