@@ -4,8 +4,139 @@ import './styles/reset.css';
 import './styles/index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { ResponsiveLine } from '@nivo/line'
 
 const watchlistIcon = <FontAwesomeIcon id='watchlist-icon' icon={faStar} />
+const data = [
+  {
+    "price": "$0.000006282",
+    "date": "August 5"
+  },
+  {
+    "price": "$0.000007275",
+    "date": "August 6"
+  },
+  {
+    "price": "$0.000007454",
+    "date": "August 7"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 8"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 9"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 10"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 11"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 12"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 13"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 14"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 15"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 16"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 17"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 18"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 19"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 20"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 21"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 22"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 23"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 24"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 25"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 26"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 27"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 28"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 29"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 30"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "August 31"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "September 1"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "September 2"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "September 3"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "September 4"
+  },
+  {
+    "price": "$0.000007632",
+    "date": "September 5"
+  }
+];
 
 function HamburgerSideNav() {
   return(
@@ -89,6 +220,14 @@ function Header() {
         <HeaderRight />
       </div>
     </header>
+  );
+}
+
+function Graph() {
+  return (
+    <section>
+      
+    </section>
   );
 }
 
