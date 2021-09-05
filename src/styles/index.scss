@@ -1,6 +1,7 @@
-$primary-color: rgba(67, 130, 181, 255);
-$secondary-color: rgb(44, 44, 44);
-$offset-color: rgb(207, 207, 207);
+$primary-color: rgb(67, 130, 181);
+$nav-button-hover: rgb(58, 111, 155);
+$base-text-color: rgb(44, 44, 44);
+$border-color: rgb(207, 207, 207);
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap");
 
 * {
@@ -104,15 +105,21 @@ body {
           border: none;
           margin-right: 20px;
           color: $primary-color;
+        }
+        button.sign-up:hover {
+          color: $nav-button-hover;
           cursor: pointer;
         }
 
-        .log-in {
+        button.log-in {
           border-radius: 20px;
           border: none;
           background: $primary-color;
           color: white;
           padding: 10px 30px;
+        }
+        button.log-in:hover {
+          background: $nav-button-hover;
           cursor: pointer;
         }
       }
@@ -126,7 +133,7 @@ header {
     padding: 0 7vw; //padding: 0 110px;
     width: 100%;
     height: 12vh;
-    border-bottom: 1px solid $offset-color;
+    border-bottom: 1px solid $border-color;
 
     .header-left {
       width: 100%;
@@ -143,7 +150,7 @@ header {
       h1 {
         font-size: 1em; //font-size: 1.3em; //font-size: 20px;
         margin: 2.2vh 2vw 0 3.5vw; //margin: 16px 10px 0 18px;
-        color: $secondary-color;
+        color: $base-text-color;
       }
 
       h4 {
@@ -165,7 +172,7 @@ header {
 
       h1 {
         font-size: 1em; //font-size: 20px;
-        color: $secondary-color;
+        color: $base-text-color;
         margin: 2.2vh 0 1.1vh 0; //margin: 16px 0 8px 0;
       }
 
@@ -181,13 +188,16 @@ header {
       float: right;
 
       .header-button-container {
-        .buy-button {
+        .watchlist-button {
+          color: $base-text-color;
+          background: rgb(240, 240, 240);
           font-family: "Noto Sans JP", sans-serif;
           font-weight: 500;
           margin: 1vh 0 0 0;
           padding: 8px; //padding: 12px 20px;
-          border: 1px solid $offset-color;
+          border: 1px solid $border-color;
           border-radius: 4px;
+          cursor: pointer;
 
           #watchlist-icon {
             color: rgb(211, 186, 75);
@@ -197,6 +207,9 @@ header {
           span {
             display: none;
           }
+        }
+        button.watchlist-button:hover {
+          border: 1px solid $primary-color;
         }
       }
     }
@@ -219,9 +232,9 @@ header {
     .header-container {
       .header-right {
         .header-button-container {
-          .buy-button {
+          .watchlist-button {
             padding: 8px 16px; //padding: 12px 20px;
-            border: 1px solid $offset-color;
+            border: 1px solid $border-color;
             border-radius: 4px;
             #watchlist-icon {
               font-size: 1em;
@@ -229,7 +242,7 @@ header {
             }
             span {
               font-size: 1em;
-              color: $secondary-color;
+              color: $base-text-color;
               display: inline;
             }
           }
@@ -291,7 +304,7 @@ header {
         h1 {
           font-size: 1.5em;
           margin: 2.2vh 1.8vw 0 2.8vw; //margin: 16px 10px 0 18px;
-          color: $secondary-color;
+          color: $base-text-color;
         }
 
         h4 {
@@ -316,9 +329,9 @@ header {
 
       .header-right {
         .header-button-container {
-          .buy-button {
+          .watchlist-button {
             padding: 8px 16px; //padding: 12px 20px;
-            border: 1px solid $offset-color;
+            border: 1px solid $border-color;
             border-radius: 4px;
             #watchlist-icon {
               font-size: 1.2em;
@@ -326,7 +339,7 @@ header {
             }
             span {
               font-size: 1.2em;
-              color: $secondary-color;
+              color: $base-text-color;
               display: inline;
             }
           }

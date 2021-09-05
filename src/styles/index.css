@@ -104,15 +104,23 @@ body {
   border: none;
   margin-right: 20px;
   color: #4382b5;
+}
+
+.nav-container .navbar .nav-buttons .nav-button-container button.sign-up:hover {
+  color: #3a6f9b;
   cursor: pointer;
 }
 
-.nav-container .navbar .nav-buttons .nav-button-container .log-in {
+.nav-container .navbar .nav-buttons .nav-button-container button.log-in {
   border-radius: 20px;
   border: none;
   background: #4382b5;
   color: white;
   padding: 10px 30px;
+}
+
+.nav-container .navbar .nav-buttons .nav-button-container button.log-in:hover {
+  background: #3a6f9b;
   cursor: pointer;
 }
 
@@ -175,21 +183,28 @@ header .header-container .header-right {
   float: right;
 }
 
-header .header-container .header-right .header-button-container .buy-button {
+header .header-container .header-right .header-button-container .watchlist-button {
+  color: #2c2c2c;
+  background: #f0f0f0;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
   margin: 1vh 0 0 0;
   padding: 8px;
   border: 1px solid #cfcfcf;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-header .header-container .header-right .header-button-container .buy-button #watchlist-icon {
+header .header-container .header-right .header-button-container .watchlist-button #watchlist-icon {
   color: #d3ba4b;
 }
 
-header .header-container .header-right .header-button-container .buy-button span {
+header .header-container .header-right .header-button-container .watchlist-button span {
   display: none;
+}
+
+header .header-container .header-right .header-button-container button.watchlist-button:hover {
+  border: 1px solid #4382b5;
 }
 
 /* Media Queries */
@@ -205,16 +220,16 @@ header .header-container .header-right .header-button-container .buy-button span
   .nav-container {
     border-bottom: 1px solid green;
   }
-  header .header-container .header-right .header-button-container .buy-button {
+  header .header-container .header-right .header-button-container .watchlist-button {
     padding: 8px 16px;
     border: 1px solid #cfcfcf;
     border-radius: 4px;
   }
-  header .header-container .header-right .header-button-container .buy-button #watchlist-icon {
+  header .header-container .header-right .header-button-container .watchlist-button #watchlist-icon {
     font-size: 1em;
     margin: 0 4px 0 0;
   }
-  header .header-container .header-right .header-button-container .buy-button span {
+  header .header-container .header-right .header-button-container .watchlist-button span {
     font-size: 1em;
     color: #2c2c2c;
     display: inline;
@@ -277,16 +292,16 @@ header .header-container .header-right .header-button-container .buy-button span
   header .header-container .header-middle p {
     font-size: 1em;
   }
-  header .header-container .header-right .header-button-container .buy-button {
+  header .header-container .header-right .header-button-container .watchlist-button {
     padding: 8px 16px;
     border: 1px solid #cfcfcf;
     border-radius: 4px;
   }
-  header .header-container .header-right .header-button-container .buy-button #watchlist-icon {
+  header .header-container .header-right .header-button-container .watchlist-button #watchlist-icon {
     font-size: 1.2em;
     margin: 0 4px 0 0;
   }
-  header .header-container .header-right .header-button-container .buy-button span {
+  header .header-container .header-right .header-button-container .watchlist-button span {
     font-size: 1.2em;
     color: #2c2c2c;
     display: inline;
