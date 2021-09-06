@@ -7,166 +7,142 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { ResponsiveLine } from '@nivo/line'
 
 const watchlistIcon = <FontAwesomeIcon id='watchlist-icon' icon={faStar} />
-const data = [
+const lineData = [
   {
-    "price": "$0.000006282",
-    "date": "August 5"
-  },
-  {
-    "price": "$0.000007275",
-    "date": "August 6"
-  },
-  {
-    "price": "$0.000007454",
-    "date": "August 7"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 8"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 9"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 10"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 11"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 12"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 13"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 14"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 15"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 16"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 17"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 18"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 19"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 20"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 21"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 22"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 23"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 24"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 25"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 26"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 27"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 28"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 29"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 30"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "August 31"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "September 1"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "September 2"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "September 3"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "September 4"
-  },
-  {
-    "price": "$0.000007632",
-    "date": "September 5"
-  }
-];
-const Line = ({ data }) => (
-    <ResponsiveLine
-        data={data}
-        margin={{ top: 50, right: 160, bottom: 50, left: 60 }}
-        xScale={{ type: 'linear' }}
-        yScale={{ type: 'linear', stacked: true, min: 0, max: 2500 }}
-        yFormat=" >-.2f"
-        curve="monotoneX"
-        axisTop={null}
-        axisRight={null}
-        axisBottom={null}
-        axisLeft={null}
-        enableGridX={false}
-        enableGridY={false}
-        colors={{ scheme: 'spectral' }}
-        lineWidth={1}
-        enablePoints={false}
-        pointSize={2}
-        pointColor={{ theme: 'background' }}
-        pointBorderWidth={1}
-        pointBorderColor={{ from: 'serieColor' }}
-        pointLabelYOffset={-12}
-        useMesh={true}
-        gridXValues={[ 0, 20, 40, 60, 80, 100, 120 ]}
-        gridYValues={[ 0, 500, 1000, 1500, 2000, 2500 ]}
-        legends={[]}
-    />
-);
-
-
+    id: "LineData",
+    data: [
+      {
+        x: "Aug 5",
+        y: 0.000006282
+      },
+      {
+        x: "Aug 6",
+        y: 0.000007275
+      },
+      {
+        x: "Aug 7",
+        y: 0.000007454
+      }
+      ,
+      {
+        x: "Aug 8",
+        y: 0.000007632
+      },
+      {
+        x: "Aug 9",
+        y: 0.000007601
+      },
+      {
+        x: "Aug 10",
+        y: 0.000007736
+      },
+      {
+        x: "Aug 11",
+        y: 0.000008000
+      },
+      {
+        x: "Aug 12",
+        y: 0.000008091
+      },
+      {
+        x: "Aug 13",
+        y: 0.000008187
+      },
+      {
+        x: "Aug 14",
+        y: 0.000008422
+      },
+      {
+        x: "Aug 15",
+        y: 0.000009220
+      },
+      {
+        x: "Aug 16",
+        y: 0.000008091
+      },
+      {
+        x: "Aug 17",
+        y: 0.000007924
+      },
+      {
+        x: "Aug 18",
+        y: 0.000008401
+      },
+      {
+        x: "Aug 19",
+        y: 0.000008446
+      },
+      {
+        x: "Aug 20",
+        y: 0.000008153
+      },
+      {
+        x: "Aug 21",
+        y: 0.000008282
+      },
+      {
+        x: "Aug 22",
+        y: 0.000008137
+      },
+      {
+        x: "Aug 23",
+        y: 0.000007586
+      },
+      {
+        x: "Aug 24",
+        y: 0.000007300
+      },
+      {
+        x: "Aug 25",
+        y: 0.000006911
+      },
+      {
+        x: "Aug 26",
+        y: 0.000007376
+      },
+      {
+        x: "Aug 27",
+        y: 0.000007114
+      },
+      {
+        x: "Aug 28",
+        y: 0.000007044
+      },
+      {
+        x: "Aug 29",
+        y: 0.000006842
+      },
+      {
+        x: "Aug 30",
+        y: 0.000006757
+      },
+      {
+        x: "Aug 31",
+        y: 0.000007251
+      },
+      {
+        x: "Sep 1",
+        y: 0.000007072
+      },
+      {
+        x: "Sep 2",
+        y: 0.000007164
+      },
+      {
+        x: "Sep 3",
+        y: 0.000007343
+      },
+      {
+        x: "Sep 4",
+        y: 0.000007470
+      },
+      {
+        x: "Sep 5",
+        y: 0.000007471
+      }
+    ]
+   }
+  ];
 
 function HamburgerSideNav() {
   return(
@@ -243,27 +219,66 @@ function HeaderRight() {
 }
 function Header() {
   return (
-    <header>
-      <div class='header-container'>
-        <HeaderLeft />
-        <HeaderMiddle />
-        <HeaderRight />
-      </div>
-    </header>
+    <div className="header-wrapper">
+      <header>
+        <div className='header-container'>
+          <HeaderLeft />
+          <HeaderMiddle />
+         <HeaderRight />
+        </div>
+      </header>
+    </div>
+    
   );
 }
 
 function Graph() {
   return (
-    <section>
+    <React.Fragment >
+        <section className='graph-container'>
+          <ResponsiveLine
+            xScale={{ type: 'point' }}
+            yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: false, reverse: false }}
+            yFormat=" >-$.2r"
+            axisTop={null}
+            axisRight={null}
+            axisBottom={null}
+            axisLeft={null}
+            margin={{
+              top: 20,
+              right: 20,
+              bottom: 60,
+              left: 120
+            }}
+            data={lineData}
+            colors={{ scheme: 'accent' }}
+            enableGridX={false}
+            useMesh={true}
+            crosshairType='none'
+            motionConfig="stiff"
+            /*tooltip={point => {
+              return<div>{lineData.data.y}</div>;
+            }}*/
+          />
+
+        </section>
       
-    </section>
+        <section className='buy-sell-container'>
+          <button>BUY</button>
+          <button>SELL</button>
+        </section>
+    </React.Fragment >
   );
 }
-
 function Content() {
   return (
-    <Header />
+    <React.Fragment>
+      <Header />
+
+      <div className='main-content'>
+        <Graph />
+      </div>
+    </React.Fragment>
   );
 
 }
