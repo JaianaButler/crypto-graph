@@ -7,7 +7,12 @@ $border-color: rgb(207, 207, 207);
 * {
   box-sizing: border-box;
 }
-
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
 body {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -212,6 +217,31 @@ header {
           border: 1px solid $primary-color;
         }
       }
+    }
+  }
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .graph-container {
+    flex-grow: 1;
+    height: 400px;
+    width: 600px;
+    //float: left;
+    //min-height: 500px;
+    //min-width: 500px;
+    //clear: both;
+  }
+  .buy-sell-container {
+    flex-grow: 2;
+    //float: right;
+    //height: 300px;
+    //width: 50%;
+    //background: red;
+    button {
+      background: red;
     }
   }
 }
