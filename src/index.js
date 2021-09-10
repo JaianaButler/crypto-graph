@@ -244,17 +244,21 @@ function Graph() {
             axisRight={null}
             axisBottom={null}
             axisLeft={null}
+            enablePoints={false}
             margin={{
               top: 20,
-              right: 20,
-              bottom: 60,
-              left: 120
+              right: 0,
+              bottom: 0,
+              left: 0
             }}
             data={lineData}
             colors={{ scheme: 'accent' }}
             enableGridX={false}
+            enableGridY={false}
+            enableArea={true}
+            areaOpacity={0.05}
             useMesh={true}
-            crosshairType='none'
+            crosshairType='cross'
             motionConfig="stiff"
             /*tooltip={point => {
               return<div>{lineData.data.y}</div>;
@@ -263,9 +267,8 @@ function Graph() {
 
         </section>
       
-        <section className='buy-sell-container'>
-          <button>BUY</button>
-          <button>SELL</button>
+        <section className='stats-container'>
+          
         </section>
     </React.Fragment >
   );
