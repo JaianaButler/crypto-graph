@@ -1,4 +1,5 @@
 $primary-color: rgb(67, 130, 181);
+$primary-bkg: rgb(250, 250, 250);
 $nav-button-hover: rgb(58, 111, 155);
 $base-text-color: rgb(44, 44, 44);
 $border-color: rgb(207, 207, 207);
@@ -7,16 +8,18 @@ $border-color: rgb(207, 207, 207);
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   height: 100%;
   width: 100%;
   overflow: auto;
 }
+
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  background: rgb(224, 225, 228);
+  background-color: $primary-bkg; //background: rgb(224, 225, 228);
   font-family: "Noto Sans JP", sans-serif;
   margin: 0 0 0 0;
 }
@@ -24,7 +27,7 @@ body {
 .nav-container {
   font-weight: bold;
   height: 11.5vh;
-  background-color: rgb(240, 240, 240);
+  background-color: $primary-bkg;
   padding: 1vh 8vw; //padding: 2vh 8.5vw; //padding: 15px 100px;
   //border-bottom: 2px solid $primary-color;
 
@@ -195,17 +198,18 @@ header {
       .header-button-container {
         .watchlist-button {
           color: $base-text-color;
-          background: rgb(240, 240, 240);
+          background-color: $primary-bkg; //background: rgb(240, 240, 240);
           font-family: "Noto Sans JP", sans-serif;
           font-weight: 500;
           margin: 1vh 0 0 0;
           padding: 8px; //padding: 12px 20px;
-          border: 1px solid $border-color;
+          border: none; //border: 1px solid $border-color;
           border-radius: 4px;
           cursor: pointer;
 
           #watchlist-icon {
-            color: rgb(211, 186, 75);
+            color: rgb(240, 212, 88);
+            font-size: 22px;
             //margin: 0 4px 0 0;
           }
 
@@ -223,26 +227,20 @@ header {
 
 .main-content {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+
   .graph-container {
-    flex-grow: 1;
-    height: 400px;
-    width: 600px;
-    //float: left;
-    //min-height: 500px;
-    //min-width: 500px;
-    //clear: both;
+    height: 45vh; //height: 400px;
+    width: 100%; //width: 100vw;
+    border-bottom: 1px solid $border-color;
+    background-color: $primary-bkg;
   }
-  .buy-sell-container {
-    flex-grow: 2;
-    //float: right;
-    //height: 300px;
-    //width: 50%;
-    //background: red;
-    button {
-      background: red;
-    }
+  .stats-container {
+    border-top: 1px solid $border-color;
+    background-color: $primary-bkg;
+    margin: 5vh 0 0 0;
+    height: 45vh;
+    width: 100%; //width: 100vw;
   }
 }
 
@@ -260,6 +258,40 @@ header {
   }
   header {
     .header-container {
+    }
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  body {
+    background: rgb(224, 225, 228);
+
+    .main-content {
+      flex-wrap: nowrap;
+
+      .graph-container {
+        width: 68%; //width: 32vw;
+        border: 1px solid $border-color;
+        border-radius: 6px;
+        margin: 0 1vw 0 6vw;
+      }
+      .stats-container {
+        width: 32%; //width: 1vw;
+        border: 1px solid $border-color;
+        border-radius: 6px;
+        margin: 0 6vw 0 1vw;
+      }
+    }
+  }
+  .nav-container {
+    border-bottom: 1px solid yellow;
+  }
+  header {
+    .header-container {
+      .header-middle {
+        margin: 0 0 0 18vw;
+      }
+
       .header-right {
         .header-button-container {
           .watchlist-button {
@@ -277,19 +309,6 @@ header {
             }
           }
         }
-      }
-    }
-  }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-  .nav-container {
-    border-bottom: 1px solid yellow;
-  }
-  header {
-    .header-container {
-      .header-middle {
-        margin: 0 0 0 18vw;
       }
     }
   }

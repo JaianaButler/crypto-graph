@@ -14,7 +14,7 @@ body {
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  background: #e0e1e4;
+  background-color: #fafafa;
   font-family: "Noto Sans JP", sans-serif;
   margin: 0 0 0 0;
 }
@@ -22,7 +22,7 @@ body {
 .nav-container {
   font-weight: bold;
   height: 11.5vh;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
   padding: 1vh 8vw;
 }
 
@@ -192,18 +192,19 @@ header .header-container .header-right {
 
 header .header-container .header-right .header-button-container .watchlist-button {
   color: #2c2c2c;
-  background: #f0f0f0;
+  background-color: #fafafa;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
   margin: 1vh 0 0 0;
   padding: 8px;
-  border: 1px solid #cfcfcf;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 header .header-container .header-right .header-button-container .watchlist-button #watchlist-icon {
-  color: #d3ba4b;
+  color: #f0d458;
+  font-size: 22px;
 }
 
 header .header-container .header-right .header-button-container .watchlist-button span {
@@ -220,28 +221,23 @@ header .header-container .header-right .header-button-container button.watchlist
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .main-content .graph-container {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  height: 400px;
-  width: 600px;
+  height: 45vh;
+  width: 100%;
+  border-bottom: 1px solid #cfcfcf;
+  background-color: #fafafa;
 }
 
-.main-content .buy-sell-container {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-}
-
-.main-content .buy-sell-container button {
-  background: red;
+.main-content .stats-container {
+  border-top: 1px solid #cfcfcf;
+  background-color: #fafafa;
+  margin: 5vh 0 0 0;
+  height: 45vh;
+  width: 100%;
 }
 
 /* Media Queries */
@@ -257,6 +253,35 @@ header .header-container .header-right .header-button-container button.watchlist
   .nav-container {
     border-bottom: 1px solid green;
   }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  body {
+    background: #e0e1e4;
+  }
+  body .main-content {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  body .main-content .graph-container {
+    width: 68%;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    margin: 0 1vw 0 6vw;
+  }
+  body .main-content .stats-container {
+    width: 32%;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    margin: 0 6vw 0 1vw;
+  }
+  .nav-container {
+    border-bottom: 1px solid yellow;
+  }
+  header .header-container .header-middle {
+    margin: 0 0 0 18vw;
+  }
   header .header-container .header-right .header-button-container .watchlist-button {
     padding: 8px 16px;
     border: 1px solid #cfcfcf;
@@ -270,16 +295,6 @@ header .header-container .header-right .header-button-container button.watchlist
     font-size: 1em;
     color: #2c2c2c;
     display: inline;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-  .nav-container {
-    border-bottom: 1px solid yellow;
-  }
-  header .header-container .header-middle {
-    margin: 0 0 0 18vw;
   }
 }
 
