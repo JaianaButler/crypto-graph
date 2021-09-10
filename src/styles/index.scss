@@ -1,5 +1,5 @@
 $primary-color: rgb(67, 130, 181);
-$primary-bkg: rgb(250, 250, 250);
+$primary-bkg: rgb(255, 255, 255);
 $nav-button-hover: rgb(58, 111, 155);
 $base-text-color: rgb(44, 44, 44);
 $border-color: rgb(207, 207, 207);
@@ -16,10 +16,14 @@ body {
   overflow: auto;
 }
 
+#root {
+  height: 100%;
+  background: $primary-bkg;
+}
+
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: $primary-bkg; //background: rgb(224, 225, 228);
   font-family: "Noto Sans JP", sans-serif;
   margin: 0 0 0 0;
 }
@@ -28,8 +32,8 @@ body {
   font-weight: bold;
   height: 11.5vh;
   background-color: $primary-bkg;
-  padding: 1vh 8vw; //padding: 2vh 8.5vw; //padding: 15px 100px;
-  //border-bottom: 2px solid $primary-color;
+  padding: 1vh 4vw; //padding: 2vh 8.5vw; //padding: 15px 100px;
+  border-bottom: 1px solid $border-color;
 
   .navbar {
     width: auto;
@@ -138,7 +142,7 @@ body {
 header {
   .header-container {
     margin: 4vh 0; //margin: 50px 0;
-    padding: 0 7vw; //padding: 0 110px;
+    padding: 0 4vw; //padding: 0 110px;
     width: 100%;
     height: 12vh;
     border-bottom: 1px solid $border-color;
@@ -247,9 +251,6 @@ header {
 /* Media Queries */
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
-  .nav-container {
-    border-bottom: 1px solid rgb(207, 207, 207);
-  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
@@ -263,6 +264,12 @@ header {
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+  html,
+  body,
+  #root {
+    background: rgb(242, 242, 242);
+  }
+
   body {
     background: rgb(224, 225, 228);
 
@@ -273,13 +280,13 @@ header {
         width: 68%; //width: 32vw;
         border: 1px solid $border-color;
         border-radius: 6px;
-        margin: 0 1vw 0 6vw;
+        margin: 0 1vw 0 4vw;
       }
       .stats-container {
         width: 32%; //width: 1vw;
         border: 1px solid $border-color;
         border-radius: 6px;
-        margin: 0 6vw 0 1vw;
+        margin: 0 4vw 0 1vw;
       }
     }
   }
@@ -339,7 +346,7 @@ header {
   header {
     .header-container {
       margin: 6vh 0; //margin: 50px 0;
-      padding: 0 8vw;
+      padding: 0 4vw;
 
       .header-left {
         .crypto-logo {
