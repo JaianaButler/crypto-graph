@@ -160,12 +160,14 @@ header .header-container .header-left h1 {
   font-size: 1em;
   margin: 2.2vh 2vw 0 3.5vw;
   color: #2c2c2c;
+  font-weight: 500;
 }
 
 header .header-container .header-left h4 {
   font-size: 0.5em;
   margin: 3vh 0;
   color: gray;
+  font-weight: 500;
 }
 
 header .header-container .header-left .crypto-logo,
@@ -183,12 +185,14 @@ header .header-container .header-middle h1 {
   font-size: 1em;
   color: #2c2c2c;
   margin: 2.2vh 0 1.1vh 0;
+  font-weight: 500;
 }
 
 header .header-container .header-middle p {
   font-size: 0.8em;
   float: right;
   color: #7bc57b;
+  font-weight: 300;
 }
 
 header .header-container .header-right {
@@ -243,6 +247,28 @@ header .header-container .header-right .header-button-container button.watchlist
   margin: 5vh 0 0 0;
   height: 45vh;
   width: 100%;
+  color: #2c2c2c;
+  padding: 0px 25px;
+}
+
+.main-content .stats-container h3 {
+  font-weight: 500;
+}
+
+.main-content .stats-container .stat {
+  display: block;
+  padding: 20px 0px;
+}
+
+.main-content .stats-container .stat h4 {
+  display: inline;
+  font-weight: 300;
+}
+
+.main-content .stats-container .stat p {
+  display: inline;
+  float: right;
+  font-weight: 500;
 }
 
 /* Media Queries */
@@ -284,7 +310,7 @@ header .header-container .header-right .header-button-container button.watchlist
     border-bottom: 1px solid yellow;
   }
   header .header-container .header-middle {
-    margin: 0 0 0 18vw;
+    margin: 0 0 0 28vw;
   }
   header .header-container .header-right .header-button-container .watchlist-button {
     padding: 8px 16px;
@@ -340,7 +366,7 @@ header .header-container .header-right .header-button-container button.watchlist
   }
   header .header-container .header-middle {
     float: left;
-    margin: 0 0 0 17vw;
+    margin: 0 0 0 20vw;
   }
   header .header-container .header-middle h1 {
     font-size: 1.5em;
@@ -368,6 +394,10 @@ header .header-container .header-right .header-button-container button.watchlist
 @media screen and (min-width: 1200px) {
   .nav-container {
     border-bottom: 1px solid blue;
+  }
+  header .header-container .header-middle {
+    float: left;
+    margin: 0 0 0 30vw;
   }
 }
 /*# sourceMappingURL=index.css.map */
