@@ -264,13 +264,31 @@ function Graph() {
               return<div>{lineData.data.y}</div>;
             }}*/
           />
-
-        </section>
-      
-        <section className='stats-container'>
-          
         </section>
     </React.Fragment >
+  );
+}
+function MarketStats() {
+  return (
+    <section className='stats-container'>
+      <h3>Market stats</h3>
+      <div className='stat'>
+        <h4>Market cap</h4>
+        <p>$2.7B</p>
+      </div>
+      <div className='stat'>
+        <h4>Volume(24 hours)</h4>
+        <p>$206.1M</p>
+      </div>
+      <div className='stat'>
+        <h4>Circulating supply</h4>
+        <p>394.8T SHIB</p>
+      </div>
+      <div className='stat'>
+        <h4>Typical hold time</h4>
+        <p>4 days</p>
+      </div>
+    </section>
   );
 }
 function Content() {
@@ -280,6 +298,7 @@ function Content() {
 
       <div className='main-content'>
         <Graph />
+        <MarketStats />
       </div>
     </React.Fragment>
   );
